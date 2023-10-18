@@ -14,33 +14,24 @@ namespace API.Data.Migrations
                 {
                     Title = "Project Winslow",
 		            ProjectOwner = "John",
-                    Description = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-                    StartDate = DateTime.Now,
-		            Updated = DateTime.Now,
                 },
                 		new Project
                 {
                     Title = "Project Turntable",
 		            ProjectOwner = "Mike",
-                    Description = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-                    StartDate = DateTime.Now,
-		            Updated = DateTime.Now,
+
                 },
                 		new Project
                 {
                     Title = "Project PeanutButter",
 		            ProjectOwner = "Sarah",
-                    Description = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-                    StartDate = DateTime.Now,
-		            Updated = DateTime.Now,
+
                 },
                 		new Project
                 {
                     Title = "Project Kefir",
 		            ProjectOwner = "Jane",
-                    Description = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-                    StartDate = DateTime.Now,
-		            Updated = DateTime.Now,
+
                 },
             };
 

@@ -5,10 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
-
-[ApiController]
-[Route("api/[controller]")]
-    public class ProjectsController : ControllerBase
+    public class ProjectsController : BaseApiController
     {
         private readonly DataContext _context;
         public ProjectsController(DataContext context)
@@ -25,10 +22,16 @@ namespace API.Controllers
             return Ok(projects);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}", Name ="GetProject")]
         public async Task<ActionResult<Project>> GetProject(int id)
         {
-            return await _context.Projects.FindAsync(id);
+           var project = await _context.Projects.FindAsync(id);
+
+           if(project == null) return NotFound();
+
+           return project;
         }
+
+
     }
 }

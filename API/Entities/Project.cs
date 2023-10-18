@@ -8,10 +8,6 @@ namespace API.Entities
 
         public string ProjectOwner { get; set; }
 
-        public string Description { get; set; }
-
-        public DateTime StartDate { get; set; }
-        
-        public DateTime Updated { get; set; }
+        public ICollection<Ticket> Tickets { get; set; }
     }
 }
